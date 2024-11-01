@@ -1,0 +1,126 @@
+.compat-item,
+.compat-field-tce_copyright_usage {
+    overflow: visible !important; /* Overrule WP */
+}
+
+.compat-field-tce_copyright_usage,
+.compat-field-tce_copyright_information {
+    margin: 0 0 10px;
+    width: 100%;
+}
+
+.compat-field-tce_copyright_usage th.label,
+.compat-field-tce_copyright_information th.label {
+    margin-right: 0;
+    vertical-align: top;
+    text-align: left;
+}
+
+.compat-field-tce_copyright_usage th.label label .alignleft,
+.compat-field-tce_copyright_information th.label label .alignleft {
+    text-align: left;
+    width: auto;
+}
+
+.compat-field-tce_copyright_usage th.label label .required,
+.compat-field-tce_copyright_information th.label label .required {
+    color: #b32d2e;
+    width: auto;
+}
+
+.compat-field-tce_copyright_usage .attachments-tce_copyright_usage-label {
+    display: flex;
+    line-height: 18px;
+    padding-top: 5px;
+    position: relative;
+}
+
+.compat-field-tce_copyright_usage .attachments-tce_copyright_usage-label .explanation-tooltip {
+    background-color: #013a47;
+    border-radius: 5px;
+    bottom: 100%;
+    color: white;
+    left: 0;
+    margin: 0 auto;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    visibility: hidden;
+    width: 220px;
+    z-index: 1;
+}
+
+.compat-field-tce_copyright_usage .attachments-tce_copyright_usage-label .explanation-tooltip:after {
+    border: 5px solid;
+    border-color: #013a47 transparent transparent transparent;
+    content: " ";
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    top: 100%;
+}
+
+.compat-field-tce_copyright_usage .attachments-tce_copyright_usage-label:hover .explanation-tooltip {
+    visibility: visible;
+}
+
+.compat-field-tce_copyright_usage .attachments-tce_copyright_usage-label #attachments-tce_copyright_usage-included,
+.compat-field-tce_copyright_usage .attachments-tce_copyright_usage-label #attachments-tce_copyright_usage-licensed {
+    margin: 2px 5px auto 0;
+}
+
+.compat-field-tce_copyright_information td.field input {
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .compat-field-tce_copyright_usage,
+    .compat-field-tce_copyright_information {
+        display: flex !important; /* Overrule WP */
+        flex-direction: column;
+    }
+
+    .compat-field-tce_copyright_usage th.label,
+    .compat-field-tce_copyright_information th.label {
+        width: 100%;
+    }
+
+    .compat-field-tce_copyright_usage th.label label span,
+    .compat-field-tce_copyright_information th.label label span {
+        font-weight: bold;
+    }
+
+    .compat-field-tce_copyright_usage td.field,
+    .compat-field-tce_copyright_information td.field {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+/* Styling for the media popup while editing a post and for smaller screens */
+.media-sidebar .compat-field-tce_copyright_usage,
+.media-sidebar .compat-field-tce_copyright_information {
+    display: flex;
+    flex-direction: column;
+}
+
+.media-sidebar .compat-field-tce_copyright_usage th.label,
+.media-sidebar .compat-field-tce_copyright_information th.label {
+    width: 100%;
+}
+
+.media-sidebar .compat-field-tce_copyright_usage th.label label span,
+.media-sidebar .compat-field-tce_copyright_information th.label label span {
+    font-weight: bold;
+}
+
+.media-sidebar .compat-field-tce_copyright_usage td.field,
+.media-sidebar .compat-field-tce_copyright_information td.field {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+}

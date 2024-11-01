@@ -1,0 +1,56 @@
+#tce-sharing-main {
+    width: 100%;
+    clear: both;
+}
+
+.tce-sharing-card {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.tce-sharing-main-action-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tce-logo {
+    background-image: url(../images/tce-icon.png);
+    background-size: cover;
+    width: 100px;
+    height: 44px;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.tce-button,
+#TceConfigurationForm button[type=submit] {
+    background-color: #003B46;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    font-size: 1rem;
+}
+
+.display_configuration_label {
+    display: inline-block;
+    min-width: 104px;
+}
+
+.display_configuration_multiline {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 25rem;
+}
+
+#tce_sharing_disconnect_form {
+    margin-bottom: 1em;
+}

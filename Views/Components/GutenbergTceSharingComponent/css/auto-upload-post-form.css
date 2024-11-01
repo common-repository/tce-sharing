@@ -1,0 +1,8 @@
+#AutoUploadPostForm {
+    display: flex;
+    align-items: center;
+}
+
+#AutoUploadPostForm > input {
+    margin-top: 2px;
+}

@@ -1,0 +1,114 @@
+:root {
+    --amplify-primary-color: #003B46;
+    --amplify-primary-tint: #003B46;
+    --amplify-primary-shade: #003B46;
+    --amplify-font-family: inherit;
+    --amplify-secondary-tint: #F86520;
+    --amplify-text-md-sub: 14px;
+}
+
+#TceConfigurationForm input[type=text], select, textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: normal;
+    padding: 0.3rem 0.5rem;
+    resize: vertical;
+    width: 100%;
+}
+
+#TceConfigurationForm input[type=text] {
+    display: block;
+    max-width: 25rem;
+}
+
+#TceConfigurationForm label {
+    display: block;
+    font-weight: bolder;
+    padding: 12px 12px 12px 0;
+}
+
+#TceConfigurationForm button:disabled,
+#TceConfigurationForm button:disabled:hover,
+#TceConfigurationForm button[disabled]:hover,
+#TceConfigurationForm button[disabled] {
+    background-color: #757575 !important;
+}
+
+#TceConfigurationForm button[type=submit]:hover {
+    background-color: #006579;
+}
+
+#TceConfigurationForm .copyrightUsage {
+    display: flex;
+    flex-direction: column;
+}
+
+#TceConfigurationForm label[for^="copyrightUsage"] {
+    display: inline-block;
+    font-weight: normal;
+}
+
+#TceConfigurationForm label[for^="copyrightUsage"] .copyrightUsageExplanationTooltip {
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+}
+
+#TceConfigurationForm label[for^="copyrightUsage"] .copyrightUsageExplanationTooltip:before {
+    content: '?';
+    padding: 2px;
+    background-color: #013a47;
+    color: white;
+    border-radius: 50%;
+    width: 1rem;
+    line-height: 1rem;
+    display: block;
+    text-align: center;
+}
+
+#TceConfigurationForm label[for^="copyrightUsage"] .copyrightUsageExplanationTooltip .tooltipText{
+    background-color: #013a47;
+    border-radius: 5px;
+    bottom: 1.75rem;
+    color: white;
+    left: 50%;
+    margin-left: -115px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    width: 220px;
+    z-index: 1;
+}
+
+#TceConfigurationForm label[for^="copyrightUsage"] .copyrightUsageExplanationTooltip .tooltipText:after {
+    border: 5px solid;
+    border-color: #013a47 transparent transparent transparent;
+    content: " ";
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    top: 100%;
+}
+
+#TceConfigurationForm label[for^="copyrightUsage"]:hover .tooltipText {
+    visibility: visible;
+}
+
+#TceConfigurationForm label[for="defaultAttachmentCopyright"] {
+    display: inline-block;
+}
+
+#TceConfigurationForm #DefaultAttachmentCopyright {
+    font-weight: normal;
+    margin-top: 12px;
+}
+
+.tce-sharing-configuration-error {
+    color: red;
+    font-weight: bolder;
+}
+
+amplify-sign-in.hydrated {
+    --box-shadow: none;
+}
